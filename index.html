@@ -38,10 +38,26 @@
 </head>
 
 <body>
-
-	<header class="main_nav black">
+	<div class="sticky">
+		<nav class="navbar" id="mynav">
+			<div class="brand-title"><a href="#mynav">AvrahamiGroup.co.il</a></div>
+			<a class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="navbar-links">
+				<ul>
+					<li><a href="#moreAboutUs">מאיר ומוריה</a></li>
+					<li><a href="#">אברהמי שיווק</a></li>
+					<li><a href="#">אברהמי התחדשות עירונית</a></li>
+					<li><a href="#">צרו קשר עמנו</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- <header class="main_nav black">
 		<div class="container">
-			<!-- <div class="row"> -->
 			<div class=" three columns">
 				<div class="logo">
 					<img src="images/avrahamigroup-logo.png" alt="avrahami group" loading="lazy" />
@@ -57,7 +73,7 @@
 				<a class="nav-link" href="/">אברהמי התחדשות עירונית</a>
 			</div>
 		</div>
-	</header>
+	</header> -->
 
 	<div class="container">
 		<div class="row">
@@ -209,6 +225,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script src="scripts/jquery.magnific-popup.js"></script>
 	<script type="text/javascript">
+		const toggleButton = document.getElementsByClassName('toggle-button')[0]
+		const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+		toggleButton.addEventListener('click', () => {
+			navbarLinks.classList.toggle('active')
+		})
 		$('.image-link').magnificPopup({
 			type: 'image',
 			mainClass: 'mfp-with-zoom', // this class is for CSS animation below
