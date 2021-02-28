@@ -16,20 +16,22 @@
 
 	<!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 
 	<!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/all.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 
 	<!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="scripts/jquery.magnific-popup.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script src="scripts/generalScripts.js" defer></script>
 
 	<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,8 +41,8 @@
 
 <body>
 	<div class="sticky">
-		<nav class="navbar" id="mynav">
-			<div class="brand-title"><a href="#mynav">AvrahamiGroup.co.il</a></div>
+		<nav class="navbar">
+			<div class="brand-title"><a href="#about">AvrahamiGroup.co.il</a></div>
 			<a class="toggle-button">
 				<span class="bar"></span>
 				<span class="bar"></span>
@@ -49,9 +51,9 @@
 			<div class="navbar-links">
 				<ul>
 					<li><a href="#moreAboutUs">מאיר ומוריה</a></li>
-					<li><a href="#">אברהמי שיווק</a></li>
-					<li><a href="#">אברהמי התחדשות עירונית</a></li>
-					<li><a href="#">צרו קשר עמנו</a></li>
+					<li><a href="#shivuk">אברהמי שיווק</a></li>
+					<li><a href="#ironit">אברהמי התחדשות עירונית</a></li>
+					<li><a href="#contactus">צרו קשר עמנו</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -75,7 +77,7 @@
 		</div>
 	</header> -->
 
-	<div class="container">
+	<div class="container" id="about">
 		<div class="row">
 			<div class="twelve columns">
 				<div class="video-responsive">
@@ -103,8 +105,8 @@
 	</div>
 	<!--about avrahami group-->
 
-	<div class="row mariGold">
-		<div class="container" id="moreAboutUs">
+	<div class="row mariGold" id="moreAboutUs">
+		<div class="container">
 			<!-- about meir secion-->
 			<div class="about" style="align-items: center;">
 				<h2>מאיר ומוריה</h2>
@@ -145,7 +147,8 @@
 	</div>
 	<!--Container meir&moria-->
 
-	<div class="row">
+	<!--start avrahami shivuk-->
+	<div class="row" id="shivuk">
 		<div class="container">
 			<div class="four columns">
 				<img class="avatar" src="images/" />
@@ -163,9 +166,9 @@
 			</div>
 		</div>
 	</div>
-	<!--avrahami shivuk-->
+	<!--end avrahami shivuk-->
 
-	<div class="row black">
+	<div class="row black" id="ironit">
 		<div class="container">
 			<div class="four columns">
 				<img class="avatar" src="images/" />
@@ -184,7 +187,9 @@
 		</div>
 	</div>
 	<!--avrahami ironit-->
-	<div class="row">
+
+	<!--start avrahami contact us-->
+	<div class="row" id="contactus">
 		<div class="container">
 			<div class="four columns">
 				<img class="avatar" src="images/" />
@@ -202,56 +207,88 @@
 			</div>
 		</div>
 	</div>
-	<!--avrahami contact us-->
-	<footer class="black">
+	<!--end avrahami contact us-->
+
+	<footer class="black footer">
 		<div class="container">
-			<div class="row twelve columns">
-				<ul class="social">
-					<li class="facebook"><a href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-					<li class="twitter"><a href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
-					<li class="instagram"><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
-					<li class="flickr"><a href="#"><i class="fa fa-flickr fa-lg"></i></a></li>
-					<li class="youtube"><a href="#"><i class="fa fa-youtube-square fa-lg"></i></a></li>
-					<li class="linkedin"><a href="#"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+			<div class="four columns">
+				<p class="footerContent">
+				<ul>
+					<li>
+						<h5> קבוצת אברהמי </h5>
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation
+					</li>
 				</ul>
+				</p>
 			</div>
+
+			<div class="four columns">
+				<p class="footerContent">
+				<ul>
+					<li>
+						<h5> צרו עמנו קשר </h5>
+					</li>
+					<li>
+						<span class="facebook">
+							<a href="#" target="_blank">
+								<i class="fab fa-facebook-square fa-lg"></i>
+							</a>
+						</span>
+						<span class="youtube">
+							<a href="https://www.youtube.com/channel/UC2slE5seOU77RDQmu8IIvBg" target="_blank">
+								<i class="fab fa-youtube-square fa-lg"></i>
+							</a>
+						</span>
+						<span class="whatsapp">
+							<a href="https://wa.me/972504242422" target="_blank">
+								<i class="fab fa-whatsapp-square fa-lg"></i>
+							</a>
+						</span>
+					</li>
+					<li>
+						meir@avrahamiGroup.co.il
+					</li>
+					<li>
+						050-42-42-422
+					</li>
+				</ul>
+				</p>
+			</div>
+
+			<div class="four columns">
+				<p class="footerContent">
+				<ul>
+					<li>
+						<h5> מפת האתר </h5>
+					</li>
+					<li><a href="#moreAboutUs">מאיר ומוריה</a></li>
+					<li><a href="#shivuk">אברהמי שיווק</a></li>
+					<li><a href="#ironit">אברהמי התחדשות עירונית</a></li>
+					<li><a href="#contactus">צרו עמנו קשר</a></li>
+				</ul>
+				</p>
+			</div>
+
 			<div class="row twelve columns">
-				<p class="copyright">&copy; 2015 Amy the Traveling Fotog. All Rights Reserved.</p>
+				<p class="footerContent" style="direction: ltr;">
+					&copy; <span id="year"></span> Avrahami Group. All Rights Reserved.
+					<br />
+					Built by
+					<a href="https://www.linkedin.com/in/moti-shaul/">Moti Shaul</a>.
+
+				</p>
 			</div>
 		</div>
 	</footer>
 
 	<!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script src="scripts/jquery.magnific-popup.js"></script>
-	<script type="text/javascript">
-		const toggleButton = document.getElementsByClassName('toggle-button')[0]
-		const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-		toggleButton.addEventListener('click', () => {
-			navbarLinks.classList.toggle('active')
-		})
-		$('.image-link').magnificPopup({
-			type: 'image',
-			mainClass: 'mfp-with-zoom', // this class is for CSS animation below
 
-			zoom: {
-				enabled: true, // By default it's false, so don't forget to enable it
-
-				duration: 300, // duration of the effect, in milliseconds
-				easing: 'ease-in-out', // CSS transition easing function 
-
-				// The "opener" function should return the element from which popup will be zoomed in
-				// and to which popup will be scaled down
-				// By defailt it looks for an image tag:
-				opener: function (openerElement) {
-					// openerElement is the element on which popup was initialized, in this case its <a> tag
-					// you don't need to add "opener" option if this code matches your needs, it's defailt one.
-					return openerElement.is('img') ? openerElement : openerElement.find('img');
-				}
-			}
-
-		});	</script>
 </body>
 
 </html>

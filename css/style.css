@@ -20,7 +20,9 @@
 .black {
   background-color: #000000;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––– */
 body {
@@ -44,6 +46,10 @@ a {
   color: white;
   text-decoration: none; /* no underline */
 }
+a:hover {
+  color: white;
+  text-decoration: none; /* no underline */
+}
 /* Header & Navigation
 –––––––––––––––––––––––––––––––––––––––––––––– */
 header.main_nav {
@@ -63,10 +69,7 @@ header.main_nav {
 .nav-link:hover {
   color: gold;
 }
-.right_navigator {
-  direction: rtl;
-  font-size: 1.5em;
-}
+
 /*--------------- new navbar ----------------*/
 .sticky {
   position: -webkit-sticky;
@@ -222,38 +225,68 @@ ul.social {
   text-align: center;
 }
 ul.social li {
-  font-size: 3em;
+  font-size: 1.5em;
   display: inline;
   padding: 0 2%;
 }
 ul.social li a {
   color: #666;
 }
-ul.social li.facebook a:hover {
+span {
+  font-size: 1.5em;
+}
+span.facebook a:hover {
   color: rgb(59, 89, 152);
 }
-ul.social li.twitter a:hover {
+span.twitter a:hover {
   color: rgb(0, 172, 237);
 }
-ul.social li.instagram a:hover {
+span.instagram a:hover {
   color: rgb(81, 127, 237);
 }
-ul.social li.youtube a:hover {
+span.youtube a:hover {
   color: rgb(187, 0, 0);
 }
-ul.social li.flickr a:hover {
+span.flickr a:hover {
   color: rgb(255, 0, 132);
 }
-ul.social li.linkedin a:hover {
+span.linkedin a:hover {
   color: rgb(0, 123, 182);
 }
+span.whatsapp a:hover {
+  color: rgb(37, 211, 102);
+}
+.footer {
+  direction: rtl;
+}
 
-p.copyright {
+.footerContent {
   text-align: center;
   color: #666;
   font-size: 1em;
+  list-style-type: none;
 }
-
+.footer ul {
+  text-align: center;
+  color: #666;
+  font-size: 1em;
+  list-style-type: none;
+}
+.footer i {
+  margin: 10px;
+}
+.footer a:hover {
+  color: white;
+  text-decoration: none; /* no underline */
+}
+.footer a {
+  color: #666;
+  text-decoration: none; /* no underline */
+}
+#year {
+  color: #666;
+  font-size: 1em;
+}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
 /* Larger than mobile */
