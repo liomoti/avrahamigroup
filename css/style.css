@@ -17,8 +17,26 @@
 .row {
   padding: 2% 0 0 0;
 }
+.headerImage {
+  background-image: url("/images/header-background.jpg");
+}
 .black {
   background-color: #000000;
+}
+.jet {
+  background-color: #333333;
+}
+.antiqueWhite {
+  background-color: #faebd7;
+}
+.goldenrod {
+  background-color: #dda520;
+}
+.dimGray {
+  background-color: #666666;
+}
+.darkStateGray {
+  background-color: #2f4f4f;
 }
 html {
   scroll-behavior: smooth;
@@ -229,9 +247,9 @@ ul.social li {
   display: inline;
   padding: 0 2%;
 }
-ul.social li a {
+/* ul.social li a {
   color: #666;
-}
+} */
 span {
   font-size: 1.5em;
 }
@@ -262,13 +280,13 @@ span.whatsapp a:hover {
 
 .footerContent {
   text-align: center;
-  color: #666;
+  color: #faebd7;
   font-size: 1em;
   list-style-type: none;
 }
 .footer ul {
   text-align: center;
-  color: #666;
+  color: #faebd7;
   font-size: 1em;
   list-style-type: none;
 }
@@ -276,15 +294,15 @@ span.whatsapp a:hover {
   margin: 10px;
 }
 .footer a:hover {
-  color: white;
+  color: #dda520;
   text-decoration: none; /* no underline */
 }
 .footer a {
-  color: #666;
+  color: #faebd7;
   text-decoration: none; /* no underline */
 }
 #year {
-  color: #666;
+  color: #faebd7;
   font-size: 1em;
 }
 /* Media Queries
@@ -310,7 +328,7 @@ span.whatsapp a:hover {
     font-size: 1.25em;
     color: #3f7f7c;
   }
-  ul.social li a {
+  /* ul.social li a {
     font-size: 0.75em;
-  }
+  } */
 }
