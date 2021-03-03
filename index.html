@@ -16,8 +16,8 @@
 
 	<!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
 	<!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,7 +35,10 @@
 
 	<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="icon" type="image/png" href="images/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="manifest" href="/images/site.webmanifest">
 
 </head>
 
@@ -76,46 +79,45 @@
 			</div>
 		</div>
 	</header> -->
-	<div class="row headerImage">
-		<div class="container " id="about">
 
-			<div class="twelve columns">
+	<!-- start about avrahami group-->
+	<div class="row headerImage" style="padding-bottom: 2%;">
+		<div class="container ">
+			<!-- <div class="row" style="margin-bottom: 2%;"> -->
+			<div class="eight columns">
 				<div class="video-responsive">
 					<iframe width="500" height="300" src="https://www.youtube.com/embed/FlURlywlF8g" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
 			</div>
-		</div>
-		<div class="row" style="margin-bottom: 2%;">
-			<div class="two columns"> &nbsp; </div>
-			<div class="eight columns">
-				<div class="about">
-					<h2>אודות אברהמי</h2>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-					exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-					reprehenderit in
+			<div class="four columns">
+				<div class="contentSection">
+					<h2> אברהמי </h2>
+					<mark>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation
+					</mark>
 				</div>
 			</div>
-			<div class="two columns"> &nbsp; </div>
 		</div>
+		<!-- </div> -->
 	</div>
-	<!--about avrahami group-->
+	<!-- end about avrahami group-->
 
-	<div class="row goldenrod" id="moreAboutUs">
+	<div class="goldenrod" id="moreAboutUs">
+		&nbsp;
 		<div class="container">
 			<!-- about meir secion-->
-			<div class="about" style="align-items: center;">
+			<div class="contentSection">
 				<h2>מאיר ומוריה</h2>
 			</div>
-
-			<div class="row">
-				<div class="four columns">
-					<img class="avatar" src="images/avatar.jpg" />
+			<div class="row" style="padding:0%;">
+				<div class="three columns avatarDiv">
+					<img class="avatarImg" src="images/avatar.jpg" />
 				</div>
-				<div class="eight columns">
+				<div class="nine columns">
 					<div class="aboutme">
 						<b>מאיר שאול</b>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -127,8 +129,8 @@
 				</div>
 			</div>
 			<!-- about moria secion-->
-			<div class="row">
-				<div class="eight columns">
+			<div class="row" style="padding:0%;">
+				<div class="nine columns">
 					<div class="aboutme">
 						<b>מוריה אברהמי</b>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -138,8 +140,8 @@
 						reprehenderit in
 					</div>
 				</div>
-				<div class="four columns">
-					<img class="avatar" src="images/avatar.jpg" />
+				<div class="three columns avatarDiv">
+					<img class="avatarImg" src="images/avatar.jpg" />
 				</div>
 			</div>
 		</div>
@@ -147,13 +149,16 @@
 	<!--Container meir&moria-->
 
 	<!--start avrahami shivuk-->
-	<div class="row darkStateGray" id="shivuk">
+	<div class="row darkStateGray contentSection" id="shivuk">
+		&nbsp;
 		<div class="container">
-			<div class="four columns">
-				<img class="avatar" src="images/" />
+
+			<div class="three columns">
+				<img src="images/avrahamigroup-logo.png" alt="avrahami group" loading="lazy" />
 			</div>
-			<div class="eight columns ">
-				<h2 class="bio">אברהמי שיווק</h2>
+
+			<div class="nine columns ">
+				<h2 style="color:#faebd7">אברהמי שיווק</h2>
 				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 					exercitation
@@ -168,14 +173,12 @@
 	<!--end avrahami shivuk-->
 
 	<!-- start avrahami ironit-->
-	<div class="row antiqueWhite" id="ironit">
+	<div class="row antiqueWhite contentSection" id="ironit">
+		&nbsp;
 		<div class="container">
-			<div class="four columns">
-				<img class="avatar" src="images/" />
-			</div>
-			<div class="eight columns">
+			<div class="twelve columns">
 				<h2 class="bio">אברהמי התחדשות עירונית</h2>
-				<p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				<p style="color:#2f4f4f">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
 					exercitation
 					ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -189,19 +192,46 @@
 	<!-- end avrahami ironit-->
 
 	<!--start avrahami contact us-->
-	<div class="row dimGray" id="contactus">
+	<div class="row dimGray contentSection" id="contactus">
+		&nbsp;
 		<div class="container">
-			<div class="four columns">
-				<img class="avatar" src="images/" />
+			<div class="five columns">
+				<img class="bigImage" src="images/contactus.jpg" />
 			</div>
-			<div class="eight columns">
+			<div class="seven columns">
 				<h2 class="bio">צרו עמנו קשר</h2>
 				<form>
+					<div class="row">
+						<div class="six columns">
+							<label for="exampleEmailInput">Your email</label>
+							<input class="u-full-width" type="email" placeholder="test@mailbox.com"
+								id="exampleEmailInput">
+						</div>
+						<div class="six columns">
+							<label for="exampleRecipientInput">Reason for contacting</label>
+							<select class="u-full-width" id="exampleRecipientInput">
+								<option value="Option 1">Questions</option>
+								<option value="Option 2">Admiration</option>
+								<option value="Option 3">Can I get your number?</option>
+							</select>
+						</div>
+					</div>
+					<label for="exampleMessage">Message</label>
+					<textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+					<label class="example-send-yourself-copy">
+						<input type="checkbox">
+						<span class="label-body">Send a copy to yourself</span>
+					</label>
+					<input class="button-primary" type="submit" value="Submit">
+				</form>
+
+
+				<!-- <form>
 					<input name="name" type="text" class="feedback-input" placeholder="Name" />
 					<input name="email" type="text" class="feedback-input" placeholder="Email" />
 					<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
 					<input type="submit" value="SUBMIT" />
-				</form>
+				</form> -->
 			</div>
 		</div>
 	</div>
@@ -214,12 +244,10 @@
 				<p class="footerContent">
 				<ul>
 					<li>
-						<h5> קבוצת אברהמי </h5>
-					</li>
-					<li>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+						<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
 						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation
+						exercitation -->
+						<img src="images/avrahamigroup-logo.png" alt="avrahami group" loading="lazy" />
 					</li>
 				</ul>
 				</p>

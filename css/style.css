@@ -5,6 +5,7 @@
 - Header & Navigation
 - About
 - Images & Media
+- Contact Form
 - Footer
 - Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
@@ -16,9 +17,6 @@
 }
 .row {
   padding: 2% 0 0 0;
-}
-.headerImage {
-  background-image: url("/images/header-background.jpg");
 }
 .black {
   background-color: #000000;
@@ -40,19 +38,28 @@
 }
 html {
   scroll-behavior: smooth;
+  background: url("/images/header-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
 }
+:target:before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-  font-family: "open-sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1.5em;
   font-weight: lighter;
   color: #000;
 }
 h2 {
-  font-family: "open-sans", cursive;
   font-size: 3em;
-  margin: 0.67em;
+  /* margin: 0.67em; */
 }
 h2.bio {
   color: #3f7f7c;
@@ -68,13 +75,28 @@ a:hover {
   color: white;
   text-decoration: none; /* no underline */
 }
+.contentSection {
+  text-align: center;
+  direction: rtl;
+}
+mark {
+  background-color: #dac186;
+}
+::selection {
+  background: #dda520; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #dda520; /* Gecko Browsers */
+}
 /* Header & Navigation
 –––––––––––––––––––––––––––––––––––––––––––––– */
+/* .headerImage {
+  background-image: url("/images/header-background.jpg");
+} */
 header.main_nav {
   padding: 1% 0;
   height: 10vh;
 }
-
 .logo {
   /* padding-bottom: 10%; */
   height: 10vh;
@@ -189,11 +211,10 @@ header.main_nav {
 }
 /* About
 –––––––––––––––––––––––––––––––––––––––––––––– */
-
-.about {
-  text-align: center;
-  direction: rtl;
+.headerAboutContent {
+  background-color: #fff;
 }
+
 .about h2 {
   margin: 0;
 }
@@ -202,30 +223,43 @@ header.main_nav {
 }
 #moreAboutUs {
   direction: rtl;
+  padding-top: 1%;
 }
 .aboutme {
   padding: 10%;
 }
+.aboutme b {
+  font-size: 1.7em;
+  margin: 2%;
+}
 
 /* Images & Media
 –––––––––––––––––––––––––––––––––––––––––––––– */
+/* .avatarDiv {
+  width: 50px;
+} */
 img {
   max-width: 100%;
   max-height: 100%;
   /* display: block; */
 }
-img.avatar {
+img.avatarImg {
   border-radius: 400px;
   border: 5px solid #fff;
 }
 img:hover {
   opacity: 0.8;
 }
+.bigImage {
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
+  border-radius: 1%;
 }
 .video-responsive iframe {
   left: 0;
@@ -234,6 +268,61 @@ img:hover {
   width: 100%;
   position: absolute;
 }
+/* Contact Form
+–––––––––––––––––––––––––––––––––––––––––––––– */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Varela Round", sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #cc4949;
+}
+
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––– */
 ul.social {
@@ -308,7 +397,15 @@ span.whatsapp a:hover {
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
 /* Larger than mobile */
-@media (max-width: 479px) {
+@media (max-width: 710px) {
+  .footer ul {
+    font-size: 0.7em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 200px) {
   /* .logo a {
     font-size: 2em;
   } */
@@ -318,9 +415,9 @@ span.whatsapp a:hover {
   .portfolio img {
     margin-bottom: 10%;
   }
-  img.avatar {
+  /* img.avatar {
     margin-top: 15%;
-  }
+  } */
   h2.bio {
     font-size: 2.5em;
   }
