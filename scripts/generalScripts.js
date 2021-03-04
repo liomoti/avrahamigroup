@@ -31,6 +31,23 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
 })
 
+/* ----- media queries ---- */
+function checkMediaQuery() {
+    // If the inner width of the window is lower then 700px
+    if (window.innerWidth < 700) {
+        // Then log this message to the console
+        document.querySelector("#videoDiv").className = "twelve columns";
+        document.querySelector("#aboutDiv").className = "twelve columns";
+    } else if (window.innerWidth > 700) {
+        document.querySelector("#videoDiv").className = "eight columns";
+        document.querySelector("#aboutDiv").className = "four columns";
+    }
+}
+
+// Add a listener for when the window resizes
+window.addEventListener('resize', checkMediaQuery);
+
+
 /* ----- footer year ---- */
 document.getElementById("year").innerHTML = new Date().getFullYear();
 // $('.image-link').magnificPopup({
