@@ -34,13 +34,31 @@ toggleButton.addEventListener('click', () => {
 /* ----- media queries ---- */
 function checkMediaQuery() {
     // If the inner width of the window is lower then 700px
-    if (window.innerWidth < 700) {
-        // Then log this message to the console
+    if (window.innerWidth < 800) {
+        // header about
         document.querySelector("#videoDiv").className = "twelve columns";
         document.querySelector("#aboutDiv").className = "twelve columns";
-    } else if (window.innerWidth > 700) {
+        // about us
+        document.querySelectorAll("#aboutMeImg").forEach(item => item.className = "twelve columns");
+        document.querySelectorAll("#aboutMeText").forEach(item => item.className = "twelve columns");
+        // contact us
+        document.querySelector("#contactUsImg").style.display = "none";
+        document.querySelector("#contactUsForm").className = "twelve columns"; //7
+        // footer
+        document.querySelectorAll("#footerDiv").forEach(item => item.className = "twelve columns");
+
+    } else if (window.innerWidth > 800) {
+        // header about
         document.querySelector("#videoDiv").className = "eight columns";
         document.querySelector("#aboutDiv").className = "four columns";
+        // about us
+        document.querySelectorAll("#aboutMeImg").forEach(item => item.className = "three columns");
+        document.querySelectorAll("#aboutMeText").forEach(item => item.className = "nine columns");
+        // contact us
+        document.getElementById("contactUsImg").style.display = "block";
+        document.querySelector("#contactUsForm").className = "seven columns"; //7
+        // footer
+        document.querySelectorAll("#footerDiv").forEach(item => item.className = "four columns");
     }
 }
 
