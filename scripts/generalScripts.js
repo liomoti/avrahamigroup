@@ -36,6 +36,7 @@ function checkMediaQuery() {
     // If the inner width of the window is lower then 700px
     if (window.innerWidth < 800) {
         // header about
+        $('#aboutDiv').insertBefore('#videoDiv');
         document.querySelector("#videoDiv").className = "twelve columns";
         document.querySelector("#aboutDiv").className = "twelve columns";
         // about us
@@ -47,8 +48,10 @@ function checkMediaQuery() {
         // footer
         document.querySelectorAll("#footerDiv").forEach(item => item.className = "twelve columns");
 
+
     } else if (window.innerWidth > 800) {
         // header about
+        $('#videoDiv').insertBefore('#aboutDiv');
         document.querySelector("#videoDiv").className = "eight columns";
         document.querySelector("#aboutDiv").className = "four columns";
         // about us
@@ -64,6 +67,7 @@ function checkMediaQuery() {
 
 // Add a listener for when the window resizes
 window.addEventListener('resize', checkMediaQuery);
+window.addEventListener('load', checkMediaQuery);
 
 
 /* ----- footer year ---- */

@@ -226,9 +226,6 @@ header.main_nav {
   direction: rtl;
   padding-top: 1%;
 }
-.aboutme {
-  padding: 10%;
-}
 .aboutme b {
   font-size: 1.7em;
   margin: 2%;
@@ -401,6 +398,10 @@ span.whatsapp a:hover {
   }
   h2 {
     font-size: 2.5em;
+  }
+  .footerContent {
+    font-size: 0.7em;
+    padding-right: 10%;
   }
 }
 @media (max-width: 200px) {
