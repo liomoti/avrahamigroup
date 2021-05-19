@@ -37,14 +37,14 @@ function checkMediaQuery() {
     if (window.innerWidth < 800) {
         // header about
         $('#aboutDiv').insertBefore('#videoDiv');
-        document.querySelector("#videoDiv").className = "twelve columns";
-        document.querySelector("#aboutDiv").className = "twelve columns";
+        // document.querySelector("#videoDiv").className = "twelve columns";
+        // document.querySelector("#aboutDiv").className = "twelve columns";
         // about us
         document.querySelectorAll("#aboutMeImg").forEach(item => item.className = "twelve columns");
         document.querySelectorAll("#aboutMeText").forEach(item => item.className = "twelve columns");
         // contact us
-        document.querySelector("#contactUsImg").style.display = "none";
-        document.querySelector("#contactUsForm").className = "twelve columns"; //7
+        // document.querySelector("#contactUsImg").style.display = "none";
+        // document.querySelector("#contactUsForm").className = "twelve columns"; //7
         // footer
         document.querySelectorAll("#footerDiv").forEach(item => item.className = "twelve columns");
 
@@ -52,14 +52,14 @@ function checkMediaQuery() {
     } else if (window.innerWidth > 800) {
         // header about
         $('#videoDiv').insertBefore('#aboutDiv');
-        document.querySelector("#videoDiv").className = "eight columns";
-        document.querySelector("#aboutDiv").className = "four columns";
+        // document.querySelector("#videoDiv").className = "eight columns";
+        // document.querySelector("#aboutDiv").className = "four columns";
         // about us
         document.querySelectorAll("#aboutMeImg").forEach(item => item.className = "three columns");
         document.querySelectorAll("#aboutMeText").forEach(item => item.className = "nine columns");
         // contact us
-        document.getElementById("contactUsImg").style.display = "block";
-        document.querySelector("#contactUsForm").className = "seven columns"; //7
+        // document.getElementById("contactUsImg").style.display = "block";
+        // document.querySelector("#contactUsForm").className = "seven columns"; //7
         // footer
         document.querySelectorAll("#footerDiv").forEach(item => item.className = "four columns");
     }
@@ -71,7 +71,7 @@ window.addEventListener('load', checkMediaQuery);
 
 
 /* ----- footer year ---- */
-document.getElementById("year").innerHTML = new Date().getFullYear();
+//document.getElementById("year").innerHTML = new Date().getFullYear();
 // $('.image-link').magnificPopup({
 //     type: 'image',
 //     mainClass: 'mfp-with-zoom', // this class is for CSS animation below
