@@ -3,7 +3,7 @@
 - General Content
 - Typography
 - navbar section
-- movie section
+- icon_row section
 - successful recipe section
 - urban renewal section
 - about us section
@@ -12,15 +12,14 @@
 - Footer
 - Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
-
 /* General Content
 –––––––––––––––––––––––––––––––––––––––––––––– */
 .main {
   padding-top: 3%;
 }
-.row {
+/* .row {
   padding: 2% 0 0 0;
-}
+} */
 .dark {
   background-color: #242424;
   color: white;
@@ -79,26 +78,6 @@ mark {
 ::-moz-selection {
   background: #fdac53; /* Gecko Browsers */
 }
-/* old Header & Navigation --delete
-–––––––––––––––––––––––––––––––––––––––––––––– */
-/* .headerImage {
-  background-image: url("/images/header-background.jpg");
-} */
-/* header.main_nav {
-  padding: 1% 0;
-  height: 10vh;
-} */
-/* .logo {
-  height: 10vh;
-  margin-bottom: 20px;
-} */
-/* .nav-link {
-  color: white;
-  margin: 10px;
-}
-.nav-link:hover {
-  color: gold;
-} */
 
 /*--------------- navbar  section ----------------*/
 .sticky {
@@ -166,6 +145,7 @@ mark {
   width: 100%;
   background-color: white;
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 @media (max-width: 800px) {
@@ -200,19 +180,31 @@ mark {
     display: flex;
   }
 }
-/* movie section
+/* icon_row section
 –––––––––––––––––––––––––––––––––––––––––––––– */
-
-/* successful recipe section
-–––––––––––––––––––––––––––––––––––––––––––––– */
+figure {
+  display: inline-block;
+  padding: 0;
+  margin: 0 1%;
+}
+figcaption {
+  font-size: small;
+}
+.showOnMobile {
+  display: none;
+}
 .icon_row {
   font-size: 72px;
   font-weight: 100;
   color: white;
   text-align: center;
 }
+/* successful recipe section
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
 .vertical_line {
   height: 100px;
+  padding-bottom: 50px;
 }
 .number {
   font-size: 5rem;
@@ -308,13 +300,21 @@ mark {
 #contactUsId button[type="submit"]:hover {
   background: #fdac53; /* Marigold */
 }
+hr {
+  margin: 0;
+}
 
 /* Images & Media
 –––––––––––––––––––––––––––––––––––––––––––––– */
 img {
   max-width: 100%;
   max-height: 100%;
-  /* display: block; */
+  vertical-align: middle;
+  /* margin-bottom: 0; */
+  display: inline-block;
+}
+img.icon {
+  width: 50px !important;
 }
 img.avatarImg {
   border-radius: 400px;
@@ -328,10 +328,9 @@ img:hover {
   border: 5px solid #fff;
 }
 .video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
   position: relative;
-  height: 0;
+  height: 90vh;
+  overflow: hidden;
   border-radius: 1%;
   width: 100%;
 }
@@ -340,7 +339,6 @@ img:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  position: absolute;
 }
 
 /* Footer
@@ -356,9 +354,6 @@ ul.social li {
   display: inline;
   padding: 0 2%;
 }
-/* ul.social li a {
-  color: #666;
-} */
 span {
   font-size: 1.5em;
 }
@@ -386,28 +381,14 @@ span.whatsapp a:hover {
 .footer {
   direction: rtl;
 }
-
 .footerContent {
   text-align: center;
   color: #faebd7;
   font-size: 1em;
   list-style-type: none;
 }
-.footer ul {
-  text-align: center;
-  color: #faebd7;
-  font-size: 1em;
-  list-style-type: none;
-}
-.footer i {
-  margin: 10px;
-}
 .footer a:hover {
   color: #dda520;
-  text-decoration: none; /* no underline */
-}
-.footer a {
-  color: #faebd7;
   text-decoration: none; /* no underline */
 }
 #year {
@@ -416,40 +397,11 @@ span.whatsapp a:hover {
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
-/* Larger than mobile */
-@media (max-width: 710px) {
-  .footer ul {
-    font-size: 0.7em;
+@media (max-width: 850px) {
+  .showOnMobile {
+    display: inline-block;
   }
-  h2 {
-    font-size: 2.5em;
+  .showOnDesktop {
+    display: none;
   }
-  .footerContent {
-    font-size: 0.7em;
-    padding-right: 10%;
-  }
-}
-@media (max-width: 200px) {
-  /* .logo a {
-    font-size: 2em;
-  } */
-  .main {
-    padding-top: 15%;
-  }
-  .portfolio img {
-    margin-bottom: 10%;
-  }
-  /* img.avatar {
-    margin-top: 15%;
-  } */
-  h2.bio {
-    font-size: 2.5em;
-  }
-  p.bio {
-    font-size: 1.25em;
-    color: #3f7f7c;
-  }
-  /* ul.social li a {
-    font-size: 0.75em;
-  } */
 }
