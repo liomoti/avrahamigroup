@@ -10,6 +10,7 @@
 - contact us section
 - Images & Media
 - Footer
+- Whatsapp icon
 - Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
 /* General Content
@@ -209,6 +210,7 @@ figcaption {
 .number {
   font-size: 5rem;
   font-weight: 700;
+  margin-left: 5px;
 }
 .text {
   text-align: right;
@@ -395,6 +397,45 @@ span.whatsapp a:hover {
   color: #faebd7;
   font-size: 1em;
 }
+/* Whatsapp icon
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.right-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.whatsapp-float {
+  margin-top: 16px;
+}
+.left-float {
+  display: none;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #166ada;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.phone-float {
+  margin-top: 16px;
+}
+
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 850px) {
@@ -403,5 +444,15 @@ span.whatsapp a:hover {
   }
   .showOnDesktop {
     display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .number {
+    margin-left: 10px;
+    padding-top: 10px;
+  }
+  .left-float {
+    display: block;
   }
 }
